@@ -2,11 +2,11 @@ package Ejercicio1;
 
 public class Profesor extends Empleado {
 
-	String cargo;
-	int antiguedadDocente;
+	private String cargo;
+	private int antiguedadDocente;
 	
 	public Profesor() {
-		
+		super();
 		cargo ="sin cargo";
 		antiguedadDocente = 0;
 	}
@@ -28,6 +28,12 @@ public class Profesor extends Empleado {
 	}
 	public void setAntiguedadDocente(int antiguedadDocente) {
 		this.antiguedadDocente = antiguedadDocente;
+	}
+	
+	//P4 Sobreescribir el método “toString()”
+	@Override
+	public String toString() {
+		return " id: " + getId() + " , nombre: " + getNombre() + ", edad: " + getEdad() + ", cargo: " + cargo + ", antiguedadDocente: " + antiguedadDocente;
 	}
 
 	
