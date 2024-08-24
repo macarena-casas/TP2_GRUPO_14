@@ -1,6 +1,9 @@
 package Ejercicio1;
 
 import java.util.ArrayList;
+import java.util.Iterator;
+
+
 
 public class mainEjercicio1_a {
 
@@ -12,9 +15,24 @@ public class mainEjercicio1_a {
 		listaProfes.add(new Profesor("Germandio","Buen tipo",30,5));
 		listaProfes.add(new Profesor("Litonia","Directora",40,7));
 		
-		for(int i=0; i<listaProfes.size(); i++) {
-			System.out.println(listaProfes.get(i).toString());
+		Iterator<Profesor> it = listaProfes.iterator();
+		
+		while(it.hasNext())
+		{
+			Profesor p = (Profesor) it.next();
+			System.out.println(p.toString());
 		}
+		
+		Profesor pr1 = new Profesor("Fulano","Buen tipo",30,5);
+        Profesor pr2 = new Profesor("Fulano","Buen tipo",30,5);
+        
+        if(pr1.equals(pr2)) {
+        	System.out.println("Es el mismo profesor");
+        }else {
+        	 System.out.println("No es el mismo profesor");
+        }
+        
+		
 	}
 
 }

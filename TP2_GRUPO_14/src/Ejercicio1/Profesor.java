@@ -32,7 +32,7 @@ public class Profesor extends Empleado implements Comparable<Profesor> {
 		this.antiguedadDocente = antiguedadDocente;
 	}
 	
-	//P4 Sobreescribir el método “toString()”
+	//P4 Sobreescribir el mï¿½todo ï¿½toString()ï¿½
 	@Override
 	public String toString() {
 		return " id: " + getId() + " , nombre: " + getNombre() + ", edad: " + getEdad() + ", cargo: " + cargo + ", antiguedad del Docente: " + antiguedadDocente;
@@ -42,6 +42,22 @@ public class Profesor extends Empleado implements Comparable<Profesor> {
 	public int compareTo(Profesor o) {
 		return this.getNombre().compareTo(o.getNombre());
 	}
+	
+	@Override
+	public boolean equals(Object obj) {
+	    if (this == obj) {
+	        return true;
+	    }
+	    if (obj == null || getClass() != obj.getClass()) {
+	        return false;
+	    }
+	    Profesor profesor = (Profesor) obj;
+	    return this.getEdad() == profesor.getEdad() &&
+	           this.getAntiguedadDocente() == profesor.getAntiguedadDocente() &&
+	           this.getNombre().equals(profesor.getNombre()) &&
+	           this.getCargo().equals(profesor.getCargo());
+	}
+	
 
 	
 }
