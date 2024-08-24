@@ -51,6 +51,8 @@ public class Empleado {
 		aux = (cont+1);
 		System.out.println("Este es el proximo ID: " + aux );
 	}
+
+	
 	
 	
 }
