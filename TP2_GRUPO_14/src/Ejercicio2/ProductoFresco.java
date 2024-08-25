@@ -39,7 +39,10 @@ public class ProductoFresco extends Producto{
 		this.paisOrigen = paisOrigen;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return "Fecha de envasado: "+ fechaEnvasado +", Pais: " + paisOrigen ;
+	}
 	
 	
 	

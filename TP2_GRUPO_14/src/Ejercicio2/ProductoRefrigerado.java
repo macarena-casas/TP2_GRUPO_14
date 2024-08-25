@@ -29,6 +29,11 @@ public class ProductoRefrigerado extends Producto{
 	public void setCodSupervision(String codSupervision) {
 		this.codSupervision = codSupervision;
 	}
+	
+	@Override
+	public String toString() {
+		return "Codigo de supervisión: "+ getCodSupervision() +", Fecha de vencimiento: " + getFechaVencimiento() + ", Numero de lote: " + getNroLote() ;
+	}
 
 	
 }

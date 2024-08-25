@@ -13,6 +13,7 @@ public class ProductoCongelado extends Producto {
 		super(fechaVencimiento, nroLote);
 		this.Temperatura=temperatura;
 		
+		
 		// TODO Auto-generated constructor stub
 	}
 
@@ -24,7 +25,11 @@ public class ProductoCongelado extends Producto {
 		this.Temperatura = tempreratura;
 	}
 
-	
+	@Override
+	public String toString() {
+		return " Temperatura: " + Temperatura + ", Fecha de vencimiento: " + getFechaVencimiento() + " Numero Lote: " + getNroLote();
+	}
+
 
 	
 	
