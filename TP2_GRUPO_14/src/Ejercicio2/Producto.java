@@ -5,7 +5,11 @@ public class Producto {
 	private String fechaVencimiento;
 	private int nroLote;
 	
-	
+	public Producto() {
+		super();
+		this.fechaVencimiento = "Sin Fecha de Vencimiento";
+		this.nroLote = 0;
+	}
 	public Producto(String fechaVencimiento, int nroLote) {
 		super();
 		this.fechaVencimiento = fechaVencimiento;

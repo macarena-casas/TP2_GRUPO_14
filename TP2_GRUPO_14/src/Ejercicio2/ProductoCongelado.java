@@ -2,11 +2,26 @@ package Ejercicio2;
 
 public class ProductoCongelado extends Producto {
 	
-	private Double tempreratura;
+	private int Temperatura;
 	
-	public ProductoCongelado(String fechaVencimiento, int nroLote) {
+	public ProductoCongelado() {
+		super();
+	this.Temperatura=00;
+	}
+	
+	public ProductoCongelado(int temperatura,String fechaVencimiento, int nroLote) {
 		super(fechaVencimiento, nroLote);
+		this.Temperatura=temperatura;
+		
 		// TODO Auto-generated constructor stub
+	}
+
+	public int getTempreratura() {
+		return Temperatura;
+	}
+
+	public void setTempreratura(int tempreratura) {
+		this.Temperatura = tempreratura;
 	}
 
 	

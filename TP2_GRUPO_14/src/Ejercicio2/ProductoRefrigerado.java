@@ -3,16 +3,32 @@ package Ejercicio2;
 
 public class ProductoRefrigerado extends Producto{
 	
+	private String codSupervision;
 	
-	public ProductoRefrigerado(String fechaVencimiento, int nroLote) {
-		super(fechaVencimiento, nroLote);
+	
+	public ProductoRefrigerado() {
+		super();
+		this.codSupervision="sin codigo";
+	}
+
+	public ProductoRefrigerado(String codsupervision, String fechaVencimiento, int nroLote) {
+		super();
+		this.codSupervision=codsupervision;
+		this.setFechaVencimiento(fechaVencimiento);
+		this.setNroLote(nroLote);
+				
 		// TODO Auto-generated constructor stub
 	}
 
-	private String codSupervision;
+	
+	
+	public String getCodSupervision() {
+		return codSupervision;
+	}
 
-	
-	
-	
+	public void setCodSupervision(String codSupervision) {
+		this.codSupervision = codSupervision;
+	}
+
 	
 }
