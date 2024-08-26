@@ -1,24 +1,24 @@
 package Ejercicio3;
 
 public class InstalacionDeportiva {
-	private String TipoDeInstalacion;
+	private int TipoDeInstalacion;
 
 	
 	
 	public InstalacionDeportiva() {
 		super();
-		TipoDeInstalacion = "sin información";
+		TipoDeInstalacion = 0;
 	}
-	public InstalacionDeportiva(String tipoDeInstalacion) {
+	public InstalacionDeportiva(int tipoDeInstalacion) {
 		super();
 		TipoDeInstalacion = tipoDeInstalacion;
 	}
 
-	public String getTipoDeInstalacion() {
+	public int getTipoDeInstalacion() {
 		return TipoDeInstalacion;
 	}
 
-	public void setTipoDeInstalacion(String tipoDeInstalacion) {
+	public void setTipoDeInstalacion(int tipoDeInstalacion) {
 		TipoDeInstalacion = tipoDeInstalacion;
 	}
 	
