@@ -14,12 +14,12 @@ public class ProductoFresco extends Producto{
 	}
 
 	
-	public ProductoFresco(String fechaenvasado, String paisorigen, String fechaVencimiento, int nroLote) {
+	public ProductoFresco(String fechaenvasado, String paisorigen, String fechaVencimiento, String nombre) {
 		super();
 		this.fechaEnvasado=fechaenvasado;
 		this.paisOrigen=paisorigen;
-		this.setFechaVencimiento(fechaVencimiento);
-		this.setNroLote(nroLote);		
+		this.setFechaVencimiento(fechaVencimiento);	
+		this.setNombre(nombre);
 		// TODO Auto-generated constructor stub
 	}
 
@@ -41,7 +41,7 @@ public class ProductoFresco extends Producto{
 	
 	@Override
 	public String toString() {
-		return "Fecha de envasado: "+ fechaEnvasado +", Pais: " + paisOrigen ;
+		return "Fecha de envasado: "+ fechaEnvasado +", Pais: " + paisOrigen + ", Nombre del producto: " + getNombre()  ;
 	}
 	
 	

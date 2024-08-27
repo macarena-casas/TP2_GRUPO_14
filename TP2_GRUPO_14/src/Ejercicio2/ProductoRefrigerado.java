@@ -11,11 +11,12 @@ public class ProductoRefrigerado extends Producto{
 		this.codSupervision="sin codigo";
 	}
 
-	public ProductoRefrigerado(String codsupervision, String fechaVencimiento, int nroLote) {
+	public ProductoRefrigerado(String codsupervision, String fechaVencimiento,String nombre) {
 		super();
 		this.codSupervision=codsupervision;
 		this.setFechaVencimiento(fechaVencimiento);
-		this.setNroLote(nroLote);
+		this.setNombre(nombre);
+		
 				
 		// TODO Auto-generated constructor stub
 	}
@@ -32,7 +33,7 @@ public class ProductoRefrigerado extends Producto{
 	
 	@Override
 	public String toString() {
-		return "Codigo de supervisión: "+ getCodSupervision() +", Fecha de vencimiento: " + getFechaVencimiento() + ", Numero de lote: " + getNroLote() ;
+		return "Codigo de supervisión: "+ getCodSupervision() +", Fecha de vencimiento: " + getFechaVencimiento() + ", Numero de lote: " + getNroLote() + ", Nombre del producto: " + getNombre() ;
 	}
 
 	

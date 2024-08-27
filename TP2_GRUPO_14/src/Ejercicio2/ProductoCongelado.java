@@ -6,28 +6,28 @@ public class ProductoCongelado extends Producto {
 	
 	public ProductoCongelado() {
 		super();
-	this.Temperatura=00;
+		this.Temperatura=00;
 	}
 	
-	public ProductoCongelado(int temperatura,String fechaVencimiento, int nroLote) {
-		super(fechaVencimiento, nroLote);
+	public ProductoCongelado(int temperatura,String fechaVencimiento, String nombre) {
+		super(fechaVencimiento,nombre);
 		this.Temperatura=temperatura;
 		
 		
 		// TODO Auto-generated constructor stub
 	}
 
-	public int getTempreratura() {
+	public int getTemperatura() {
 		return Temperatura;
 	}
 
-	public void setTempreratura(int tempreratura) {
-		this.Temperatura = tempreratura;
+	public void setTemperatura(int temperatura) {
+		this.Temperatura = temperatura;
 	}
 
 	@Override
 	public String toString() {
-		return " Temperatura: " + Temperatura + ", Fecha de vencimiento: " + getFechaVencimiento() + " Numero Lote: " + getNroLote();
+		return " Temperatura: " + Temperatura + ", Fecha de vencimiento: " + getFechaVencimiento() + " Numero Lote: " + getNroLote() + ", Nombre del producto: " + getNombre() ;
 	}
 
 
